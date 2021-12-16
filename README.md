@@ -24,5 +24,3 @@ Notes:
  cd ~
  # Step 2: Execute the below command to perform your check.
  wget https://raw.githubusercontent.com/rv4l3r3/log4v-vuln-check/main/log4js-vuln-check.sh -q -O - |sudo bash
- # Step 3: Receive a detailed report of files related to CVE-2021-44228
-
