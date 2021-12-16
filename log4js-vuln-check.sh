@@ -16,7 +16,8 @@ echo '################# Updating Aptitude Repositories (Currently Disabled) ####
 #sudo apt-get update
 
 echo '################# Installing Denpencies (Currently Disabled) #################'
-#sudo apt-get install lsof unzip locate mlocate
+#sudo apt-get install lsof unzip locate find
+sudo apt-get install unzip -y
 
 echo '################# Updating File Index Database #################'
 sudo updatedb
