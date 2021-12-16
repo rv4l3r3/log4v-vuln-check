@@ -25,4 +25,4 @@ cd ~
 ## Step 2: Execute the below command to perform your check.  
 ## Run with:
 
-    wget https://raw.githubusercontent.com/rv4l3r3/log4v-vuln-check/main/log4js-vuln-check.sh?token=AVRHND25DOMUOZ7MBIJ44YDBXKQ26 -q -O - |sudo bash
+    wget https://raw.githubusercontent.com/rv4l3r3/log4v-vuln-check/main/log4js-vuln-check.sh -q -O - |sudo bash
