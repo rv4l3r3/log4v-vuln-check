@@ -21,7 +21,7 @@ Notes:
   
 # How to use:
 ## Step 1: Run this script from your home directory ie /home/ubuntu/  
-## Run with:
+## Change directory to home with:
 
     cd ~
 
