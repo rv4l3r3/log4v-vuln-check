@@ -23,4 +23,4 @@ Notes:
  # Step 1: Run script from your home folder i.e /home/ubuntu
  cd ~
  # Step 2: Execute the below command to perform your check.
- wget https://raw.githubusercontent.com/rv4l3r3/log4v-vuln-check/main/log4js-vuln-check.sh?token=AVRHND25DOMUOZ7MBIJ44YDBXKQ26 -q -O - |sudo bash
+ ## Run wget https://raw.githubusercontent.com/rv4l3r3/log4v-vuln-check/main/log4js-vuln-check.sh?token=AVRHND25DOMUOZ7MBIJ44YDBXKQ26 -q -O - |sudo bash
