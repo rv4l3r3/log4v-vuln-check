@@ -19,10 +19,10 @@ Notes:
  - Currently only tested on Ubuntu 18.04 LTS but should work on most Debian\Ubuntu based distributions.
  - Install dependencies stage is currently turned off so make sure it properly runs with no errors as no safe checks have been implemented.
   
-Run Script:
- # Step 1: Run script from your home folder i.e /home/ubuntu
+# Run:
+ #Step 1: Run script from your home folder i.e /home/ubuntu
  cd ~
- # Step 2: Execute the below command to perform your check.
+ #Step 2: Execute the below command to perform your check.
  wget https://raw.githubusercontent.com/rv4l3r3/log4j-test/main/log4js-vuln-check.sh -q -O - |sudo bash
  
- <3
+
