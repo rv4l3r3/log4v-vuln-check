@@ -12,14 +12,17 @@
 
 echo '################# Starting Log4JS Vuln Check & File Scanner + Port Bind Script #################'
 
-echo '################# Updating Aptitude Repositories (Currently Disabled) #################'
+#echo '################# Updating Aptitude Repositories (Currently Disabled) #################'
 #sudo apt-get update
 
-echo '################# Installing Denpencies (Currently Disabled) #################'
-#sudo apt-get install lsof unzip locate find
+#echo '################# Installing All Denpencies (Status: Disabled) #################'
+#sudo apt-get install lsof unzip locate find zip -y
+#sudo apt-get install unzip -y
+
+#echo '################# Installing Unzip Dependancy #################'
 sudo apt-get install unzip -y
 
-echo '################# Updating File Index Database #################'
+#echo '################# Updating File Index Database #################'
 sudo updatedb
 
 echo '################# Finding Anything With Java In Name #################'
@@ -102,7 +105,7 @@ fi
 
 information "Looking for files containing log4j..."
 if [ "$(command -v locate)" ]; then
-  information "using locate, which could be using outdated data. besure to have called updatedb recently"
+  information "using locate to be sure to have indexed updatedb recently"
 fi
 OUTPUT="$(locate_log4j | grep -iv log4js | grep -v log4j_checker_beta)"
 if [ "$OUTPUT" ]; then
