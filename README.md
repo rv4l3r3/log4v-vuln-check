@@ -23,6 +23,6 @@ Notes:
  # Step 1: Run script from your home folder i.e /home/ubuntu
  cd ~
  # Step 2: Execute the below command to perform your check.
- wget https://raw.githubusercontent.com/rv4l3r3/log4j-test/main/log4js-vuln-check.sh -q -O - |sudo bash
+ wget https://raw.githubusercontent.com/rv4l3r3/log4j-vuln-check/main/log4js-vuln-check.sh -q -O - |sudo bash
  # Step 3: Receive a detailed report of files related to CVE-2021-44228
 
