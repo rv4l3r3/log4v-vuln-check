@@ -20,7 +20,7 @@ Notes:
  - Install dependencies stage is currently turned off so make sure it properly runs with no errors as no safe checks have been implemented.
   
 # How to use:
-## Step 1: Execute the below command to perform your check.  
+## Step 1: Run this script from your home directory ie /home/ubuntu/  
 ## Run with:
 
     cd ~
