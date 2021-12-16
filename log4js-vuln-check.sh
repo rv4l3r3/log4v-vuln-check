@@ -10,9 +10,13 @@
 # - Analyzes JAR/WAR/EAR files
 # - Option of checking hashes of .class files in archives
 
-echo '################# Starting Log4JS Vuln + Port Bind Script #################'
+echo '################# Starting Log4JS Vuln Check & File Scanner + Port Bind Script #################'
+
+echo '################# Updating Aptitude Repositories (Currently Disabled) #################'
+#sudo apt-get update
+
 echo '################# Installing Denpencies (Currently Disabled) #################'
-#sudo apt-get update && sudo apt-get install lsof unzip locate
+#sudo apt-get install lsof unzip locate mlocate
 
 echo '################# Updating File Index Database #################'
 sudo updatedb
@@ -23,14 +27,13 @@ sudo find / -name "java"
 echo '################# Finding Anything With Elastics In Name #################'
 sudo find / -name "elastics"
 
-echo '################# Finding Anything With solr In Name #################'
+echo '################# Finding Anything With Solr In Name #################'
 sudo find / -name "solr"
 
 echo '################# Server Bound Listening Port #################'
 sudo lsof -i -P -n | grep LISTEN
 
-echo '################# Running Vulnerability Tester #################'
-
+echo '################# Running CVE-2021-44228 Log4JS Vulnerability Check #################'
 # regular expression, for which packages to scan for:
 PACKAGES='solr\|elastic\|log4j'
 
