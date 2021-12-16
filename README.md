@@ -4,7 +4,7 @@ This script is used to perform a fast check to see if your server is possibly af
 It does not provide 100% guarantee that you are not vulnerable, but it gives a hint if it is possible that you could be vulnerable.
  
  Features:
- - Updates repositories with "sudo apt-get update -y (Disabled, Uncomment if needed) 
+ - Updates apt repositories with "sudo apt-get update -y (Disabled, Uncomment if needed) 
  - Installs Script Dependencies "sudo apt-get install lsof unzip locate mlocate -y" (Disabled, Uncomment if needed) 
  - Uses 'find' to scan for occurrences of Java, Elastics, Solr files.
  - Uses 'lsof' to list all ports in a LISTEN state
