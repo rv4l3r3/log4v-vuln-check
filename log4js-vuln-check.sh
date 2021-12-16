@@ -22,7 +22,7 @@ echo '################# Starting Log4JS Vuln Check & File Scanner + Port Bind Sc
 #echo '################# Installing Unzip Dependancy #################'
 sudo apt-get install unzip -y
 
-#echo '################# Updating File Index Database #################'
+#echo '################# Updating File Index #################'
 sudo updatedb
 
 echo '################# Finding Anything With Java In Name #################'
@@ -107,12 +107,24 @@ information "Looking for files containing log4j..."
 if [ "$(command -v locate)" ]; then
   information "using locate to be sure to have indexed updatedb recently"
 fi
-OUTPUT="$(locate_log4j | grep -iv log4js | grep -v log4j_checker_beta)"
+OUTPUT="$(locate_log4j | grep -iv log4js | grep -v log4js-vuln-check)"
 if [ "$OUTPUT" ]; then
   warning "Maybe vulnerable, those files contain the name:"
   printf "%s\n" "$OUTPUT"
 else
   ok "No files containing log4j"
+fi
+
+information "Looking for files containing the JndiLookup.class"
+if [ "$(command -v locate)" ]; then
+  information "using locate to be sure to have indexed updatedb recently"
+fi
+OUTPUT="$(locate_log4j | grep -iv JndiLookup.class | grep -v log4js-vuln-check)"
+if [ "$OUTPUT" ]; then
+  warning "Maybe vulnerable, those files contain the name: JndiLookup.class"
+  printf "%s\n" "$OUTPUT"
+else
+  ok "No files containing JndiLookup.class"
 fi
 
 information "Checking installed packages Solr ElasticSearch and packages containing log4j"
