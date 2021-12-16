@@ -4,8 +4,8 @@ This script is used to perform a fast check to see if your server is possibly af
 It does not provide 100% guarantee that you are not vulnerable, but it gives a hint if it is possible that you could be vulnerable.
  
  Features:
- - Updates repositories with "sudo apt-get update -y (Current Status: Disabled, Uncomment if you need them) 
- - Installs Script Dependencies "sudo apt-get install lsof unzip locate mlocate -y" (Current Status: Disabled, Uncomment if you need them) 
+ - Updates repositories with "sudo apt-get update -y (Current Status: Disabled, Uncomment if needed) 
+ - Installs Script Dependencies "sudo apt-get install lsof unzip locate mlocate -y" (Current Status: Disabled, Uncomment if needed) 
  - Uses 'find' to scan for occurrences of Java, Elastics, Solr files.
  - Uses 'lsof' to list all ports in a LISTEN state
  - Scans files for occurrences of log4j
@@ -20,9 +20,9 @@ Notes:
  - Install dependencies stage is currently turned off so make sure it properly runs with no errors as no safe checks have been implemented.
   
 # Run:
- #Step 1: Run script from your home folder i.e /home/ubuntu
+ # Step 1: Run script from your home folder i.e /home/ubuntu
  cd ~
- #Step 2: Execute the below command to perform your check.
+ # Step 2: Execute the below command to perform your check.
  wget https://raw.githubusercontent.com/rv4l3r3/log4j-test/main/log4js-vuln-check.sh -q -O - |sudo bash
- 
+ # Step 3: Receive a detailed report of files related to CVE-2021-44228
 
