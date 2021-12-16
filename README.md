@@ -19,9 +19,12 @@ Notes:
  - Currently only tested on Ubuntu 18.04 LTS but should work on most Debian\Ubuntu based distributions.
  - Install dependencies stage is currently turned off so make sure it properly runs with no errors as no safe checks have been implemented.
   
-# Run:
-# Step 1: Run script from your home folder i.e /home/ubuntu
-cd ~
+# How to use:
+## Step 1: Execute the below command to perform your check.  
+## Run with:
+
+    cd ~
+
 ## Step 2: Execute the below command to perform your check.  
 ## Run with:
 
