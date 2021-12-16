@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# How To Run Script "wget https://raw.githubusercontent.com/5ur35n/log4j-test/main/log4js-vuln-check.sh -q -O - |sudo bash"
+# How To Run Script "wget https://raw.githubusercontent.com/rv4l3r3/log4v-vuln-check/main/log4js-vuln-check.sh -q -O - |sudo bash"
 
 # This script is used to perform a fast check if your server is possibly affected by CVE-2021-44228 (the log4j vulnerability). 
 # It does not give a 100% proof, that you are not vulnerable, but it gives a hint if it is possible, that you could be vulnerable.
