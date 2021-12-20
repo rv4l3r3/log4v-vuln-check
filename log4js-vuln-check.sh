@@ -19,7 +19,7 @@ echo '################# Starting Log4JS Vuln Check & File Scanner + Port Bind Sc
 #sudo apt-get install lsof unzip locate find zip -y
 #sudo apt-get install unzip -y
 
-#echo '################# Installing Unzip Dependancy #################'
+#echo '################# Installing Unzip Dependancy (Status: Disabled) #################'
 #sudo apt-get install unzip -y
 
 #echo '################# Updating File Index Database #################'
