@@ -20,7 +20,7 @@ echo '################# Starting Log4JS Vuln Check & File Scanner + Port Bind Sc
 #sudo apt-get install unzip -y
 
 #echo '################# Installing Unzip Dependancy #################'
-sudo apt-get install unzip -y
+#sudo apt-get install unzip -y
 
 #echo '################# Updating File Index Database #################'
 sudo updatedb
